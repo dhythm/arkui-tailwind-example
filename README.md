@@ -18,7 +18,9 @@ npm i -D eslint-plugin-unused-imports@3
 ### Storybook
 
 ```sh
+npx storybook@latest init
 npm install @storybook/builder-vite --save-dev
+npx storybook@latest add @storybook/addon-styling-webpack
 ```
 
 ## Getting started
