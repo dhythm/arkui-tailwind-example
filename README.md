@@ -23,4 +23,10 @@ npm install @storybook/builder-vite --save-dev
 npx storybook@latest add @storybook/addon-styling-webpack
 ```
 
+### Ark UI
+
+```sh
+npm install @ark-ui/react
+```
+
 ## Getting started
