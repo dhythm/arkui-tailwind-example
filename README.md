@@ -27,6 +27,7 @@ npx storybook@latest add @storybook/addon-styling-webpack
 
 ```sh
 npm install @ark-ui/react
+npm install lucide-react
 ```
 
 ## Getting started
