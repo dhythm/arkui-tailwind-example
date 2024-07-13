@@ -1,8 +1,20 @@
 import { Meta, StoryObj } from "@storybook/react";
 import { RadioGroup } from "./RadioGroup";
+import { useState } from "react";
 
 const component = () => {
-  return <RadioGroup />;
+  const [selectedValue, setSelectedValue] = useState<string>("0");
+  const options = Array.from(Array(10), (_, index) => ({
+    value: index.toString(),
+    label: `Choice #${index + 1}`,
+  }));
+  return (
+    <RadioGroup
+      options={options}
+      selectedValue={selectedValue}
+      onChange={setSelectedValue}
+    />
+  );
 };
 
 const meta = {

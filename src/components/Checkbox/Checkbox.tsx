@@ -13,17 +13,13 @@ export const Checkbox = forwardRef<HTMLLabelElement, Props>(function Root(
   ref
 ) {
   return (
-    <ArkCheckbox.Root
-      className="peer h-4 w-4 shrink-0 rounded-sm border border-primary ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground"
-      {...rest}
-      ref={ref}
-    >
-      <ArkCheckbox.Label>{label}</ArkCheckbox.Label>
-      <ArkCheckbox.Control>
-        <ArkCheckbox.Indicator>
+    <ArkCheckbox.Root className="flex" {...rest} ref={ref}>
+      <ArkCheckbox.Control className="h-8 w-8">
+        <ArkCheckbox.Indicator className="border">
           <CheckIcon />
         </ArkCheckbox.Indicator>
       </ArkCheckbox.Control>
+      <ArkCheckbox.Label>{label}</ArkCheckbox.Label>
       <ArkCheckbox.HiddenInput />
     </ArkCheckbox.Root>
   );
