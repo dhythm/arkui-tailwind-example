@@ -25,10 +25,10 @@ export const RadioGroup: FC<Props> = ({ options, selectedValue, onChange }) => {
           value={option.value}
           className="flex align-center cursor-pointer gap-4"
         >
-          <ArkRadioGroup.ItemControl className="p-1 h-6 w-6 border rounded-full data-[state=checked]:bg-gray-300">
+          <ArkRadioGroup.ItemControl className="group p-1 h-6 w-6 border rounded-full data-[state=checked]:bg-gray-300">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-3.5 w-3.5"
+              className="h-3.5 w-3.5 group-data-[state=checked]:opacity-100 group-data-[state=unchecked]:opacity-0"
               viewBox="0 0 16 16"
               fill="currentColor"
             >
