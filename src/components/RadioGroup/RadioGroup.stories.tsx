@@ -8,6 +8,7 @@ const component = () => {
     value: index.toString(),
     label: `Choice #${index + 1}`,
   }));
+  console.log(selectedValue);
   return (
     <RadioGroup
       options={options}

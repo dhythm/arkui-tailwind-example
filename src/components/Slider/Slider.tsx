@@ -16,6 +16,7 @@ export const Slider: FunctionComponent<Props> = ({
 }) => {
   return (
     <ArkSlider.Root
+      className="flex flex-direction-col"
       min={min}
       max={max}
       value={value}
